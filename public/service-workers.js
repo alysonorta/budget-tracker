@@ -11,6 +11,8 @@ const FILES_TO_CACHE = [
 ];
 
 self.addEventListener('install', (event) => {
+    console.log("service worker is installed");
+    
     event.waitUntil(
       caches
         .open(CACHE_NAME)
