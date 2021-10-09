@@ -21,7 +21,7 @@ mongoose.connect("mongodb://localhost/salty-fjord-79499", {
 });
 
 // routes
-app.use(require("../budget-tracker/routes/api.js"));
+app.use(require("./routes/api"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
